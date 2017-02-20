@@ -50,7 +50,8 @@ app.post('/facebook', function(req, res) {
     // res.sendStatus(401);
   }
   console.log(req.body);
-
+  console.log('finish quangdh');
+  
   // Process the Facebook updates here
   res.sendStatus(200);
 });
