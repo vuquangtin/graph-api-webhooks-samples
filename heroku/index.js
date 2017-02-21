@@ -50,7 +50,12 @@ app.post('/facebook', function(req, res) {
     // res.sendStatus(401);
   }
   console.log(req.body);
-  console.log('finish quangdh');
+  console.log('finish quangdh0');
+  console.log('finish quangdh1');
+  console.log('finish quangdh2');
+  console.log('finish quangdh3');
+  console.log('finish quangdh4');
+  console.log('finish quangdh5');
   
   // Process the Facebook updates here
   res.sendStatus(200);
