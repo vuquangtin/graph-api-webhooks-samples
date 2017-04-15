@@ -57,7 +57,7 @@ app.post('/facebook', function(req, res) {
   console.log('.............................................1');
   console.log(req.body.entry);
   console.log('.............................................2');
-  console.log(req.body.entry.body.changes);
+  console.log(req.body.entry[0].changes);
 
   console.log('.............................................3');
   console.log('finish quangdh0');
