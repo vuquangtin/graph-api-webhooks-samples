@@ -55,12 +55,11 @@ app.post('/facebook', function(req, res) {
   // { entry: [ { changes: [Object], id: '177451742755395', time: 1492253900 } ],
   console.log(req.body);
   console.log('.............................................1');
-  
   console.log(req.body.entry);
-  console.log(req.body.entry.time);
-  console.log(req.body.entry.id);
-  console.log(req.body.entry.changes);
-  console.log('..............................................2');
+  console.log('.............................................2');
+  console.log(req.body.entry.body.changes);
+
+  console.log('.............................................3');
   console.log('finish quangdh0');
 
   
