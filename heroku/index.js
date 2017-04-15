@@ -23,6 +23,7 @@ app.get('/', function(req, res) {
 });
 
 app.get(['/facebook', '/instagram'], function(req, res) {
+  console.log('quangdh > get fb ...........................');
   if (
     req.param('hub.mode') == 'subscribe' &&
     req.param('hub.verify_token') == 'tokenq'
