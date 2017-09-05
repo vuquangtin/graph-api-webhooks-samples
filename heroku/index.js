@@ -35,6 +35,13 @@ app.get(['/facebook', '/instagram'], function(req, res) {
   }
 });
 
+app.get(['/zalo'], function(req, res) {
+  console.log('quangdh > get fb ...........................');
+  
+    res.sendStatus(200);
+
+});
+
 app.post('/facebook', function(req, res) {
   console.log('Facebook request body:');
 
@@ -73,6 +80,16 @@ app.post('/instagram', function(req, res) {
   console.log('insta.............................................1');
   console.log(req.body.entry);
   console.log('insta.............................................2');
+  // Process the Instagram updates here
+  res.sendStatus(200);
+});
+
+
+app.post('/zalo', function(req, res) {
+  console.log('QuangDH - zalo request body:');
+  console.log(req.body);
+  console.log('zalo.............................................1');
+
   // Process the Instagram updates here
   res.sendStatus(200);
 });
