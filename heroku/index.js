@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
   console.log(req);
-  res.send('It works!');
+  res.send('It works - QuangDH here!');
 });
 
 app.get(['/facebook', '/instagram'], function(req, res) {
@@ -68,7 +68,7 @@ app.post('/facebook', function(req, res) {
 });
 
 app.post('/instagram', function(req, res) {
-  console.log('Instagram request body:');
+  console.log('QuangDH - Instagram request body:');
   console.log(req.body);
   // Process the Instagram updates here
   res.sendStatus(200);
