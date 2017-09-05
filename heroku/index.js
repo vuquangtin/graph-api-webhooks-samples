@@ -70,6 +70,11 @@ app.post('/facebook', function(req, res) {
 app.post('/instagram', function(req, res) {
   console.log('QuangDH - Instagram request body:');
   console.log(req.body);
+  console.log('insta.............................................1');
+  console.log(req.body.entry);
+  console.log('insta.............................................2');
+  console.log(req.body.entry[0].changes);
+  console.log('insta.............................................3');
   // Process the Instagram updates here
   res.sendStatus(200);
 });
