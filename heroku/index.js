@@ -43,6 +43,7 @@ app.get(['/zalo'], function(req, res) {
 
 app.get(['/zaloappurl'], function(req, res) {
   console.log('zaloappurl-------------------------------------------------------------1');
+  res.send('It works - QuangDH here!');
   res.sendStatus(200);
 
 });
