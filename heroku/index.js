@@ -36,9 +36,11 @@ app.get(['/facebook', '/instagram'], function(req, res) {
 });
 
 app.get(['/zalo'], function(req, res) {
+  console.log('-------------------------------------------------------------1');
   console.log('quangdh > get zalooooooooooooooooooooooooooooooooooooooooooooo');
-  console.log(req);
+  console.log(req.body);
   res.sendStatus(200);
+  console.log('-------------------------------------------------------------2');
 
 });
 
